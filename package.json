@@ -1,0 +1,29 @@
+{
+  "name": "baltimorenodeschool.github.io",
+  "version": "1.0.0",
+  "description": "Baltimore nodeschool website and event planning forum",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/baltimorenodeschool/baltimorenodeschool.github.io.git"
+  },
+  "author": "Jason Rhodes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baltimorenodeschool/baltimorenodeschool.github.io/issues"
+  },
+  "homepage": "https://github.com/baltimorenodeschool/baltimorenodeschool.github.io",
+  "devDependencies": {
+    "path": "~0.4.9",
+    "jshint-stylish": "~0.1.5",
+    "gulp-ruby-sass": "~0.3.0",
+    "gulp-util": "~2.2.14",
+    "gulp-notify": "~0.6.2",
+    "gulp": "~3.5.2",
+    "gulp-jshint": "~1.4.2",
+    "node-underscorify": "0.0.3",
+    "gulp-browserify": "^0.5.0"
+  },
+  "dependencies": {
+    "browserify": "^3.32.1"
+  }
+}
