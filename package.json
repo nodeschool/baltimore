@@ -11,6 +11,9 @@
   "bugs": {
     "url": "https://github.com/baltimorenodeschool/baltimorenodeschool.github.io/issues"
   },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter list"
+  },
   "homepage": "https://github.com/baltimorenodeschool/baltimorenodeschool.github.io",
   "devDependencies": {
     "path": "~0.4.9",
@@ -21,9 +24,16 @@
     "gulp": "~3.5.2",
     "gulp-jshint": "~1.4.2",
     "node-underscorify": "0.0.3",
-    "gulp-browserify": "^0.5.0"
+    "gulp-browserify": "^0.5.0",
+    "underscore": "^1.6.0",
+    "js-yaml": "^3.0.2",
+    "chai": "^1.9.1",
+    "mocha": "^1.18.2",
+    "sinon": "^1.9.0",
+    "gulp-pagemaki": "jasonrhodes/gulp-pagemaki"
   },
   "dependencies": {
-    "browserify": "^3.32.1"
+    "browserify": "^3.32.1",
+    "through": "^2.3.4"
   }
 }
