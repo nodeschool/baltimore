@@ -39,7 +39,10 @@ gulp.task("pages", function () {
 
   return gulp.src(paths.pages)
     .pipe(maki({
-      templatesDir: path.join(__dirname, "src", "layouts")
+      templatesDir: path.join(__dirname, "src", "layouts"),
+      contentParse: function (string) {
+        return string;
+      }
     }))
     .pipe(gulp.dest("."));
 
