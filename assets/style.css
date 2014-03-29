@@ -1388,6 +1388,13 @@ a.huh {
     color: white;
     margin-right: 4px; }
 
+a.navicon {
+  float: right;
+  color: #3e85d9;
+  display: inline-block;
+  padding: 25px 16px 0 0;
+  font-size: 80%; }
+
 .col {
   margin-bottom: 4em; }
   .col h4 {
@@ -1396,7 +1403,7 @@ a.huh {
     color: white; }
 
 .inset {
-  margin-bottom: 1.5em; }
+  margin-bottom: 2em; }
   .inset strong {
     color: #3e85d9; }
 
@@ -1412,6 +1419,38 @@ a.huh {
       font-size: 20px;
       font-weight: 900; }
 
+.irc {
+  padding: 3em 0; }
+  .irc p {
+    line-height: 120%;
+    margin: 0 0 0.2em;
+    font-weight: 100;
+    font-size: 20px; }
+  .irc .system {
+    color: #61b041; }
+    .irc .system a {
+      color: #78da50; }
+  .irc .message b {
+    font-weight: inherit;
+    color: #3e85d9; }
+  .irc .message .fa-circle {
+    font-size: 50%;
+    position: relative;
+    top: -3px;
+    padding-right: 2px; }
+  .irc .message.me {
+    color: #999999; }
+    .irc .message.me b {
+      color: #66a3ee; }
+  .irc .answerbot {
+    color: #ff6a5d;
+    margin: 1.5em 0;
+    font-weight: 100; }
+    .irc .answerbot a {
+      color: #999999; }
+    .irc .answerbot b {
+      font-weight: 900; }
+
 @media all and (min-width: 900px) {
   .col {
     float: left;
@@ -1425,3 +1464,6 @@ a.huh {
     float: right;
     position: relative;
     top: 25px; } }
+@media all and (min-width: 600px) {
+  .irc .answerbot {
+    width: 50%; } }
