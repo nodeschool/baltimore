@@ -21,7 +21,7 @@ var paths = {
     build: ["./src/sass/*.sass", "./src/sass/*.scss", "./src/sass/*.css"]
   },
   pages: ["./src/pages/**/*"],
-  images: ["./src/images/**/*"]
+  statics: ["./src/statics/**/*"]
 };
 
 paths.buildDir = path.join(process.cwd(), "assets");
@@ -39,8 +39,8 @@ gulp.task("pages", function () {
 
   return gulp.src(paths.pages)
     .pipe(maki({
-      templatesDir: path.join(__dirname, "src", "layouts"),
-      contentParse: function (string) {
+      templatesDir: path.join(__dirname, "src", "layouts")
+      , contentParse: function (string) {
         return string;
       }
     }))
@@ -74,16 +74,18 @@ gulp.task("styles", function () {
 
 });
 
-gulp.task("images", function () {
+gulp.task("statics", function () {
 
-  return gulp.src(paths.images)
-    .pipe(gulp.dest(path.join(paths.buildDir, "images")));
-})
+  return gulp.src(paths.statics)
+    .pipe(gulp.dest(path.join(paths.buildDir)));
 
-gulp.task("watch", ["scripts", "styles", "pages"], function () {
+});
+
+gulp.task("watch", ["scripts", "styles", "pages", "statics"], function () {
 
   gulp.watch(paths.scripts.watch, ["scripts"]);
   gulp.watch(paths.styles.all, ["styles"]);
   gulp.watch(paths.pages, ["pages"]);
+  gulp.watch(paths.statics, ["statics"]);
   
 });
