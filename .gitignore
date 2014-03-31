@@ -1,2 +1,4 @@
 .sass-cache
 lib/pagemaki
+.DS_Store
+*/.DS_Store

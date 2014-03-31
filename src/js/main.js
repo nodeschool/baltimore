@@ -30,7 +30,7 @@ $(window).on("scroll", function (e) {
 var faqtext = {
   irc: "boring faq",
   normal: "irc faq"
-}
+};
 
 function toggleFaqStyle(current, button) {
   var btn = button.find("span");

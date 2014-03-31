@@ -83,11 +83,17 @@ a.huh {
 
 		&.logo {
 			text-align: center;
-			margin-bottom: 0;
+			margin: 0;
+			padding-top: 2em;
+		}
+
+		.blurb {
+			text-align: left;
+			margin-bottom: 4em;
 		}
 
 		p {
-			font-size: 24px;
+			font-size: 18px;
 		}
 	}
 
