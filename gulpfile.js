@@ -6,7 +6,15 @@
   , stylish = require('jshint-stylish')
   , notify = require("gulp-notify")
   , path = require("path")
+  , marked = require("marked")
   , maki = require("gulp-pagemaki")
+
+// Markdown options for content parsing later
+marked.setOptions({
+  gfm: true,
+  tables: true,
+  breaks: false
+});
 
 // globs and build directories
 var paths = {
@@ -40,8 +48,12 @@ gulp.task("pages", function () {
   return gulp.src(paths.pages)
     .pipe(maki({
       templatesDir: path.join(__dirname, "src", "layouts")
-      , contentParse: function (string) {
-        return string;
+      , contentParse: function (string, extension) {
+        if (extension.toLowerCase() === "markdown" || extension.toLowerCase() === "md") {
+          return marked(string);
+        } else {
+          return string;
+        }
       }
     }))
     .pipe(gulp.dest("."));

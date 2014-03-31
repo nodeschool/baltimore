@@ -1,0 +1,21 @@
+.center {
+	width: 100%;
+	max-width: 1200px;
+	padding: 10px 20px;
+	margin: 0 auto;
+}
+
+@media all and (min-width: 900px) {
+
+	.col {
+		float: left;
+		width: 50%;
+		padding-right: 50px;
+		
+		&.last {
+			padding-right: 0;
+			padding-left: 50px;
+		}
+	}
+
+}

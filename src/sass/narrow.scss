@@ -1,0 +1,17 @@
+@import "variables";
+@import "vendor/font-awesome/font-awesome";
+
+@import "baseline";
+@import "layout";
+
+p:first-child {
+	text-align: left;
+	margin: 1em 0 3em;
+}
+
+.container {
+	width: 100%;
+	max-width: 675px;
+	margin: 0 auto;
+	padding: 20px;
+}
