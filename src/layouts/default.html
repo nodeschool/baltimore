@@ -9,11 +9,11 @@
   <link href='http://fonts.googleapis.com/css?family=Raleway+Dots' rel='stylesheet' type='text/css'>
   <% styles = page.options.css || ["style.css"] %>
   <% _.each(styles, function (file) { %>
-  <link href="/assets/<%= file %>?hi=ok" rel="stylesheet">
+  <link href="/baltimore/assets/<%= file %>?hi=ok" rel="stylesheet">
   <% }) %>
   <% if (page.options.jshead) { %>
     <% _.each(page.options.jshead, function (file) { %>
-    <script src="/assets/<%= file %>" type="text/javascript"></script>
+    <script src="/baltimore/assets/<%= file %>" type="text/javascript"></script>
     <% }); %>
   <% } %>
   <!-- Google Analytics -->
@@ -33,13 +33,13 @@
 <body>
 
   <div class="container <%= page.options.bodyclasses && page.options.bodyclasses.join(" ") %>">
-  <p id="logo-link" style="display: none;"><a href="/"><img src="/assets/images/bmorenodeschool-white.png" alt="baltimore node school"></a></p>
+  <p id="logo-link" style="display: none;"><a href="/baltimore"><img src="/baltimore/assets/images/bmorenodeschool-white.png" alt="baltimore node school"></a></p>
   <%= page.content %>
   </div>
 
 <% if (page.options.jsfoot) { %>
   <% _.each(page.options.jsfoot, function (file) { %>
-  <script src="/assets/<%= file %>" type="text/javascript"></script>
+  <script src="/baltimore/assets/<%= file %>" type="text/javascript"></script>
   <% }); %>
 <% } %>
 

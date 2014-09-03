@@ -1,13 +1,13 @@
- var gulp = require("gulp")
-  , gutil = require("gulp-util")
-  , browserify = require("gulp-browserify")
-  , sass = require("gulp-ruby-sass")
-  , jshint = require("gulp-jshint")
-  , stylish = require('jshint-stylish')
-  , notify = require("gulp-notify")
-  , path = require("path")
-  , marked = require("marked")
-  , maki = require("gulp-pagemaki")
+var gulp = require("gulp");
+var gutil = require("gulp-util");
+var browserify = require("gulp-browserify");
+var sass = require("gulp-ruby-sass");
+var jshint = require("gulp-jshint");
+var stylish = require('jshint-stylish');
+var notify = require("gulp-notify");
+var path = require("path");
+var marked = require("marked");
+var maki = require("gulp-pagemaki");
 
 // Markdown options for content parsing later
 marked.setOptions({
@@ -38,7 +38,7 @@ paths.buildDir = path.join(process.cwd(), "assets");
 /** ========================================================================
  *
  * TASK DEFINITIONS
- * 
+ *
  */
 
 gulp.task("default", ["scripts", "styles"]);
@@ -47,8 +47,8 @@ gulp.task("pages", function () {
 
   return gulp.src(paths.pages)
     .pipe(maki({
-      templatesDir: path.join(__dirname, "src", "layouts")
-      , contentParse: function (string, extension) {
+      templatesDir: path.join(__dirname, "src", "layouts"),
+      contentParse: function (string, extension) {
         if (extension.toLowerCase() === "markdown" || extension.toLowerCase() === "md") {
           return marked(string);
         } else {
@@ -61,7 +61,7 @@ gulp.task("pages", function () {
 })
 
 gulp.task("scripts", ["jshint"], function () {
-  
+
   return gulp.src(paths.scripts.build)
     .pipe(browserify({
       debug: !gutil.env.production,
@@ -99,5 +99,5 @@ gulp.task("watch", ["scripts", "styles", "pages", "statics"], function () {
   gulp.watch(paths.styles.all, ["styles"]);
   gulp.watch(paths.pages, ["pages"]);
   gulp.watch(paths.statics, ["statics"]);
-  
+
 });
