@@ -2,8 +2,65 @@
 @import "vendor/font-awesome/font-awesome";
 
 @import "baseline";
-@import "layout";
 
+.center {
+	width: 100%;
+	max-width: 1200px;
+	padding: 10px 20px;
+	margin: 0 auto;
+}
+
+@media all and (min-width: 900px) {
+
+	.col {
+		float: left;
+		width: 30%;
+		padding-right: 50px;
+
+		&.half {
+			width: 50%;
+		}
+
+		&.wide {
+			width: 65%;
+		}
+
+		&.last {
+			padding-right: 0;
+			padding-left: 50px;
+		}
+	}
+
+}
+
+
+.container {
+
+	&.article {
+
+		#logo-link {
+			display: block !important; // hell yeah
+		}
+
+	}
+}
+
+h2 {
+	margin: 0 0 0.5em;
+	font-size: 3.5em;
+	font-weight: 100;
+	text-transform: uppercase;
+	display: inline-block;
+	font-family: "Raleway Dots";
+}
+
+.next-event {
+
+	background-color: #000;
+	padding: 2em;
+	margin: 0 0 2em;
+
+}
 
 .col {
 	h3 {
@@ -33,6 +90,30 @@ a.huh {
 		margin-right: 4px;
 	}
 
+}
+
+p.title-line {
+	position: relative;
+	z-index: 10;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	margin: 0 0 5px;
+	color: $red;
+
+	span {
+		background-color: #222;
+		padding-right: 10px;
+	}
+
+	&:before {
+		content: " ";
+		display: block;
+		border-bottom: 8px solid $red;
+		z-index: -5;
+		position: relative;
+		top: 12px;
+	}
 }
 
 .social {
@@ -73,18 +154,21 @@ a.huh {
 .sponsors {
 	background-color: $purple;
 
-	h2 {
+	.sponsor-stars {
+		width: 100%;
+		padding: 1em 0;
 		font-size: 40px;
 		text-align: center;
-		font-weight: 100;
+	}
+
+	h2 {
+		margin: 0;
 	}
 
 	.col {
 
-		&.logo {
-			margin: 0;
-			padding-top: 2em;
-		}
+		margin: 0;
+		padding-top: 2em;
 
 		.blurb {
 			text-align: left;
@@ -204,7 +288,7 @@ a.huh {
 			margin: 1em 0 2em;
 		}
 	}
-	
+
 }
 
 .button.register-push {
@@ -230,7 +314,7 @@ a.huh {
 }
 
 @media all and (min-width: 600px) {
-	
+
 	a.button {
 
 		&.xlarge {

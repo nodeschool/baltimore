@@ -1361,20 +1361,43 @@ a.button {
 .row {
   overflow: hidden; }
 
-.center {
-  width: 100%;
-  max-width: 1200px;
-  padding: 10px 20px;
+.article #logo-link img {
+  width: 200px;
   margin: 0 auto; }
+.article h1 {
+  font-size: 60px;
+  font-weight: 100; }
+.article img {
+  width: 100%;
+  height: auto;
+  display: block; }
+  .article img.x2 {
+    width: 100%;
+    max-width: 800px; }
 
-@media all and (min-width: 900px) {
-  .col {
-    float: left;
-    width: 50%;
-    padding-right: 50px; }
-    .col.last {
-      padding-right: 0;
-      padding-left: 50px; } }
+.sponsor-stars .fa-star {
+  color: gold; }
+
+.sidebar {
+  font-size: .7em; }
+  .sidebar .item {
+    margin-bottom: 4em; }
+
+blockquote {
+  position: relative;
+  margin: 0 0 1.5em;
+  padding-left: 3.5em;
+  font-weight: 100;
+  font-size: 1.3em; }
+  blockquote .fa-quote-left {
+    font-size: 3em;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  blockquote cite {
+    display: block;
+    margin-top: 0.5em; }
+
 p:first-child {
   text-align: left;
   margin: 1em 0 3em; }
@@ -1384,3 +1407,5 @@ p:first-child {
   max-width: 675px;
   margin: 0 auto;
   padding: 20px; }
+  .container.article #logo-link {
+    display: block !important; }

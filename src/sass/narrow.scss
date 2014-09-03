@@ -14,4 +14,12 @@ p:first-child {
 	max-width: 675px;
 	margin: 0 auto;
 	padding: 20px;
+
+  &.article {
+
+    #logo-link {
+      display: block !important; // hell yeah
+    }
+  }
+
 }

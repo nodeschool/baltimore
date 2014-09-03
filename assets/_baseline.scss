@@ -53,3 +53,64 @@ a.button {
 .row {
 	overflow: hidden;
 }
+
+.article {
+
+	#logo-link img {
+		width: 200px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-size: 60px;
+		font-weight: 100;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+
+		&.x2 {
+			width: 100%;
+			max-width: 800px;
+		}
+	}
+}
+
+.sponsor-stars {
+
+	.fa-star {
+		color: $gold;
+	}
+}
+
+.sidebar {
+
+	font-size: .7em;
+
+	.item {
+		margin-bottom: 4em;
+	}
+}
+
+
+blockquote {
+	position: relative;
+	margin: 0 0 1.5em;
+	padding-left: 3.5em;
+	font-weight: 100;
+	font-size: 1.3em;
+
+	.fa-quote-left {
+		font-size: 3em;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	cite {
+		display: block;
+		margin-top: 0.5em;
+	}
+}

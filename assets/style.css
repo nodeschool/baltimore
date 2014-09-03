@@ -1361,6 +1361,43 @@ a.button {
 .row {
   overflow: hidden; }
 
+.article #logo-link img {
+  width: 200px;
+  margin: 0 auto; }
+.article h1 {
+  font-size: 60px;
+  font-weight: 100; }
+.article img {
+  width: 100%;
+  height: auto;
+  display: block; }
+  .article img.x2 {
+    width: 100%;
+    max-width: 800px; }
+
+.sponsor-stars .fa-star {
+  color: gold; }
+
+.sidebar {
+  font-size: .7em; }
+  .sidebar .item {
+    margin-bottom: 4em; }
+
+blockquote {
+  position: relative;
+  margin: 0 0 1.5em;
+  padding-left: 3.5em;
+  font-weight: 100;
+  font-size: 1.3em; }
+  blockquote .fa-quote-left {
+    font-size: 3em;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  blockquote cite {
+    display: block;
+    margin-top: 0.5em; }
+
 .center {
   width: 100%;
   max-width: 1200px;
@@ -1370,11 +1407,31 @@ a.button {
 @media all and (min-width: 900px) {
   .col {
     float: left;
-    width: 50%;
+    width: 30%;
     padding-right: 50px; }
+    .col.half {
+      width: 50%; }
+    .col.wide {
+      width: 65%; }
     .col.last {
       padding-right: 0;
       padding-left: 50px; } }
+.container.article #logo-link {
+  display: block !important; }
+
+h2 {
+  margin: 0 0 0.5em;
+  font-size: 3.5em;
+  font-weight: 100;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: "Raleway Dots"; }
+
+.next-event {
+  background-color: #000;
+  padding: 2em;
+  margin: 0 0 2em; }
+
 .col h3 {
   font-size: 32px;
   line-height: 38px;
@@ -1397,6 +1454,25 @@ a.huh {
     font-weight: bold;
     color: white;
     margin-right: 4px; }
+
+p.title-line {
+  position: relative;
+  z-index: 10;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 0 5px;
+  color: #ff6a5d; }
+  p.title-line span {
+    background-color: #222;
+    padding-right: 10px; }
+  p.title-line:before {
+    content: " ";
+    display: block;
+    border-bottom: 8px solid #ff6a5d;
+    z-index: -5;
+    position: relative;
+    top: 12px; }
 
 .social {
   float: right;
@@ -1424,18 +1500,21 @@ a.huh {
 
 .sponsors {
   background-color: #590e5f; }
-  .sponsors h2 {
+  .sponsors .sponsor-stars {
+    width: 100%;
+    padding: 1em 0;
     font-size: 40px;
-    text-align: center;
-    font-weight: 100; }
-  .sponsors .col.logo {
+    text-align: center; }
+  .sponsors h2 {
+    margin: 0; }
+  .sponsors .col {
     margin: 0;
     padding-top: 2em; }
-  .sponsors .col .blurb {
-    text-align: left;
-    margin-bottom: 4em; }
-  .sponsors .col p {
-    font-size: 18px; }
+    .sponsors .col .blurb {
+      text-align: left;
+      margin-bottom: 4em; }
+    .sponsors .col p {
+      font-size: 18px; }
 
 .faq {
   padding-top: 3em;

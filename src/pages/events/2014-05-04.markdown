@@ -1,0 +1,14 @@
+---
+layout: default
+title: Wrapup #1 - May 4th, 2014
+bodyclasses:
+  - article
+css:
+  - narrow.css
+---
+
+![Mentors and attendees at the first baltimore nodeschool](/assets/images/event/IMG_4881@2x.jpg)
+
+# First event wrap-up!
+
+Our first nodeschool event _was awesome_.

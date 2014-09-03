@@ -6,9 +6,10 @@
   <meta name="description" content="Bringing nodeschool to Baltimore">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800,600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway+Dots' rel='stylesheet' type='text/css'>
   <% styles = page.options.css || ["style.css"] %>
   <% _.each(styles, function (file) { %>
-  <link href="/assets/<%= file %>" rel="stylesheet">
+  <link href="/assets/<%= file %>?hi=ok" rel="stylesheet">
   <% }) %>
   <% if (page.options.jshead) { %>
     <% _.each(page.options.jshead, function (file) { %>
@@ -31,7 +32,8 @@
 </head>
 <body>
 
-  <div class="container">
+  <div class="container <%= page.options.bodyclasses && page.options.bodyclasses.join(" ") %>">
+  <p id="logo-link" style="display: none;"><a href="/"><img src="/assets/images/bmorenodeschool-white.png" alt="baltimore node school"></a></p>
   <%= page.content %>
   </div>
 
