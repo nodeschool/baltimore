@@ -4,7 +4,7 @@ title: Code of Conduct
 css:
   - narrow.css
 ---
-[![baltimore node school](/assets/images/bmorenodeschool-white.png)](/)
+[![baltimore node school](/baltimore/assets/images/bmorenodeschool-white.png)](/)
 # Code of Conduct
 
 All attendees, mentors, volunteers and sponsors at **baltimore nodeschool** events are required to agree with the following code of conduct. Organizers will enforce this code throughout the event to the best of our ability. We expect cooperation from all participants to help ensure a safe and welcoming environment for everyone.

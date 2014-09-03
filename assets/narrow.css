@@ -1399,8 +1399,7 @@ blockquote {
     margin-top: 0.5em; }
 
 p:first-child {
-  text-align: left;
-  margin: 1em 0 3em; }
+  text-align: left; }
 
 .container {
   width: 100%;
