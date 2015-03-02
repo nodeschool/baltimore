@@ -18,17 +18,17 @@ Providing a location to meet with adequate space, collaborative seating, good lo
 
 ### Financial sponsorship
 
-Currently this amount is at $200 (per event)* to go toward food, drinks, supplies (signs, name badges, posters, etc) and swag (printing stickers, lanyards for mentors, t-shirts are a possibility).
+Currently this amount is at $250 (per event)* to go toward food, drinks, supplies (signs, name badges, posters, etc) and swag (printing stickers, lanyards for mentors, t-shirts are a possibility).
 
 PayPal or advance check works best here, but some companies have preferred to pick up food/drinks themselves and bring them to the event, for example. We'll work with whatever works for you. :)
 
-_*Note: the $200 amount has worked well so far but may be adjusted depending on the size and type of event._
+_*Note: this amount has worked well so far but may be adjusted depending on the size and type of event._
 
 ### What you get
 
 At either of these levels, your company name/description goes on our website, you're free to bring a sign and/or swag to put up at the event, and you can give a quick 2 minute plug during the event at some point.
 
-This is also a pretty good opportunity to get in front of area node developers if you'd like to mention job opportunities, also.
+This is also a pretty good opportunity to get in front of area node developers if you'd like to mention job opportunities.
 
 ## Ok, ready to give us $$$?
 
