@@ -9,29 +9,14 @@ css:
 <style> h2, h3 { margin-top: 2em; }</style>
 # Sponsorship
 
-We can't put on nodeschool events here in Baltimore without some help from awesome sponsors. As of right now we have two types of somewhat loosely-defined sponsorship opportunities:
+We can't put on nodeschool events here in Baltimore without some help from awesome sponsors. We want to make sponsorship as easy as possible, so if you'd like to sponsor an upcoming event, just go to the registration page and buy a sponsor ticket. 
 
+A sponsor ticket currently includes (subject to change):
 
-### Space sponsorship
+* **Entry to the event for 2 representatives.** Obviously, the event is free so you can send whoever you like, but we ask that you either send people who are participating in the event, or send a max of 1-2 reps who are only there to represent you as a sponsor. 
 
-Providing a location to meet with adequate space, collaborative seating, good location, parking if possible, and solid wi-fi internet and other technical needs such as projector, sound for music, etc.
+* **A place to put your sign and/or swag.** Bring your logo sign, a box of giveaways, etc. Just please make sure anything you are giving away is respectful of our [code of conduct](conduct-code.html).
 
-### Financial sponsorship
+* **A 2-minute pitch during our mid-event break.** This is a great time to raise awareness of your company, pitch open job positions, etc. to a room full of eager JavaScript learners. Again, please keep the pitch brief and respectful of our [code of conduct](conduct-code.html).
 
-Currently this amount is at $250 (per event)* to go toward food, drinks, supplies (signs, name badges, posters, etc) and swag (printing stickers, lanyards for mentors, t-shirts are a possibility).
-
-PayPal or advance check works best here, but some companies have preferred to pick up food/drinks themselves and bring them to the event, for example. We'll work with whatever works for you. :)
-
-_*Note: this amount has worked well so far but may be adjusted depending on the size and type of event._
-
-### What you get
-
-At either of these levels, your company name/description goes on our website, you're free to bring a sign and/or swag to put up at the event, and you can give a quick 2 minute plug during the event at some point.
-
-This is also a pretty good opportunity to get in front of area node developers if you'd like to mention job opportunities.
-
-## Ok, ready to give us $$$?
-
-Send an email to jason.matthew.rhodes@gmail.com outlining what kind of sponsorship you're interested in and we'll work with you to figure out what works best.
-
-## Thanks!!!!!
+If you have any questions, please contact Jason at jason.matthew.rhodes@gmail.com.
