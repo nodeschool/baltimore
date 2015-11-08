@@ -12,7 +12,8 @@
     "url": "https://github.com/baltimorenodeschool/baltimorenodeschool.github.io/issues"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter list"
+    "test": "./node_modules/.bin/mocha --reporter list",
+    "start": "gulp serve"
   },
   "homepage": "https://github.com/baltimorenodeschool/baltimorenodeschool.github.io",
   "devDependencies": {
@@ -36,10 +37,12 @@
   },
   "dependencies": {
     "browserify": "^3.32.1",
+    "express": "^4.13.3",
     "js-yaml": "^3.4.3",
     "lodash": "^3.10.1",
     "marked": "^0.3.5",
     "moment": "^2.10.6",
-    "through": "^2.3.4"
+    "through": "^2.3.4",
+    "yargs": "^3.29.0"
   }
 }

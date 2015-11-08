@@ -12,6 +12,8 @@ var fs = require("fs");
 var yaml = require("js-yaml");
 var moment = require("moment");
 var _ = require("lodash");
+var express = require("express");
+var argv = require('yargs').argv;
 
 // Markdown options for content parsing later
 marked.setOptions({
@@ -109,6 +111,15 @@ gulp.task("watch", ["build"], function () {
   gulp.watch(paths.pages.watch, ["pages"]);
   gulp.watch(paths.statics, ["statics"]);
 
+});
+
+gulp.task("serve", ["watch"], function () {
+  var app = express();
+  app.use(express.static("."));
+  app.use("/baltimore", express.static("."));
+  var server = app.listen(argv.port || 4000, function () {
+    console.log("\n*****************\nServer listening on port " + server.address().port);
+  });
 });
 
 function prepareGlobals() {
