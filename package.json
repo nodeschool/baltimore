@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "browserify": "^3.32.1",
+    "marked": "^0.3.5",
     "through": "^2.3.4"
   }
 }
