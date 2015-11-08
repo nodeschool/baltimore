@@ -11,7 +11,7 @@ site:
       location:
         name: Betamore
         link: https://betamore.com
-      workshops: ["learnyounode", "javascripting", "streamadventure", "browserify"]
+      workshops: ["Learn You Node", "Javascripting", "Stream Adventure", "Browserify Adventure"]
     -
       start: 2015-03-29T13:00:00-05:00
       end: 2015-03-29T17:00:00-05:00
@@ -20,15 +20,19 @@ site:
         name: Digital Harbor Foundation
 
 workshops:
-  learnyounode:
+  -
     name: Learn You Node
     description: for learning node
-  javascripting:
+    link: https://github.com/workshopper/learnyounode
+  -
     name: Javascripting
     description: for those interested in learning JavaScript itself
-  streamadventure:
+    link: https://github.com/sethvincent/javascripting
+  -
     name: Stream Adventure
     description: for a more advanced lesson
-  browserify:
+    link: https://github.com/substack/stream-adventure
+  -
     name: Browserify Adventure
     description: if you want to experiment with npm + browsers
+    link: https://github.com/substack/browserify-adventure
