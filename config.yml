@@ -1,2 +1,5 @@
-name: baltimore nodeschool
-description: Bringing nodeschool to Baltimore
+site:
+  name: Baltimore NodeSchool
+  links:
+    github: https://github.com/nodeschool/baltimore
+    twitter: http://twitter.com/baltimorenodeschool
