@@ -9,6 +9,9 @@ var path = require("path");
 var marked = require("marked");
 var maki = require("gulp-pagemaki");
 var fs = require("fs");
+var yaml = require("js-yaml");
+var moment = require("moment");
+var _ = require("lodash");
 
 // Markdown options for content parsing later
 marked.setOptions({
@@ -48,7 +51,7 @@ gulp.task("pages", function () {
 
   return gulp.src(paths.pages)
     .pipe(maki({
-      globals: fs.readFileSync('./config.yml', { encoding: 'utf-8' }),
+      globals: prepareGlobals(),
       templatesDir: path.join(__dirname, "src", "layouts"),
       contentParse: function (string, extension) {
         if (extension.toLowerCase() === "markdown" || extension.toLowerCase() === "md") {
@@ -103,3 +106,24 @@ gulp.task("watch", ["scripts", "styles", "pages", "statics"], function () {
   gulp.watch(paths.statics, ["statics"]);
 
 });
+
+function prepareGlobals() {
+  var globals = yaml.safeLoad(fs.readFileSync("./config.yml", { encoding: "utf-8" }));
+  if (!globals.site) {
+    throw new Error('global config not loaded');
+  }
+  globals.site.upcoming = prepareUpcoming(globals);
+  return globals;
+}
+
+function prepareUpcoming(globals) {
+  var upcoming = globals.site.events[0];
+  var start = moment(upcoming.start);
+  var end = moment(upcoming.end);
+
+  upcoming.pretty = {
+    date: start.format('dddd, M/D'),
+    time: start.format('ha') + ' to ' + end.format('ha')
+  };
+  return upcoming;
+}
