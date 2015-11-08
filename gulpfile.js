@@ -32,7 +32,10 @@ var paths = {
     all: ["./src/sass/**/*.sass", "./src/sass/**/*.scss", "./src/sass/**/*.css"],
     build: ["./src/sass/*.sass", "./src/sass/*.scss", "./src/sass/*.css"]
   },
-  pages: ["./src/pages/**/*"],
+  pages: {
+    build: ["./src/pages/**/*"],
+    watch: ["./src/pages/**/*", "./config.yml"]
+  },
   statics: ["./src/statics/**/*"]
 };
 
@@ -49,7 +52,7 @@ gulp.task("default", ["scripts", "styles"]);
 
 gulp.task("pages", function () {
 
-  return gulp.src(paths.pages)
+  return gulp.src(paths.pages.build)
     .pipe(maki({
       globals: prepareGlobals(),
       templatesDir: path.join(__dirname, "src", "layouts"),
@@ -102,7 +105,7 @@ gulp.task("watch", ["scripts", "styles", "pages", "statics"], function () {
 
   gulp.watch(paths.scripts.watch, ["scripts"]);
   gulp.watch(paths.styles.all, ["styles"]);
-  gulp.watch(paths.pages, ["pages"]);
+  gulp.watch(paths.pages.watch, ["pages"]);
   gulp.watch(paths.statics, ["statics"]);
 
 });
@@ -125,5 +128,16 @@ function prepareUpcoming(globals) {
     date: start.format('dddd, M/D'),
     time: start.format('ha') + ' to ' + end.format('ha')
   };
+  upcoming.workshops = prepareEventWorkshops(upcoming, globals.workshops);
   return upcoming;
+}
+
+/**
+ * Translate a workshop string into the full workshop object
+ * 
+ */
+function prepareEventWorkshops(event, workshops) {
+  return _.map(event.workshops, function(w) {
+    return workshops[w];
+  });
 }
