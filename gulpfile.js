@@ -48,7 +48,8 @@ paths.buildDir = path.join(process.cwd(), "assets");
  *
  */
 
-gulp.task("default", ["scripts", "styles"]);
+gulp.task("default", ["watch"]);
+gulp.task("build", ["scripts", "styles", "pages", "statics"]);
 
 gulp.task("pages", function () {
 
@@ -101,7 +102,7 @@ gulp.task("statics", function () {
 
 });
 
-gulp.task("watch", ["scripts", "styles", "pages", "statics"], function () {
+gulp.task("watch", ["build"], function () {
 
   gulp.watch(paths.scripts.watch, ["scripts"]);
   gulp.watch(paths.styles.all, ["styles"]);

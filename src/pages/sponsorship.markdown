@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Code of Conduct
+title: Sponsorship
 css:
   - narrow.css
 ---
