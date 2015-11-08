@@ -50,7 +50,7 @@ paths.buildDir = path.join(process.cwd(), "assets");
  *
  */
 
-gulp.task("default", ["watch"]);
+gulp.task("default", ["serve"]);
 gulp.task("build", ["scripts", "styles", "pages", "statics"]);
 
 gulp.task("pages", function () {
@@ -150,6 +150,6 @@ function prepareUpcoming(globals) {
  */
 function prepareEventWorkshops(event, workshops) {
   return _.map(event.workshops, function(w) {
-    return workshops[w];
+    return _.find(workshops, 'name', w);
   });
 }

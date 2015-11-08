@@ -29,7 +29,7 @@ jsfoot:
       <p>This month, we'll be offering the following lessons:</p>
       <ul>
       <% _.forEach(site.upcoming.workshops, function (ws) { %>
-        <li><%= ws.name %>: <%= ws.description %></li>
+        <li><a href="<%= ws.link %>"><%= ws.name %></a>: <%= ws.description %></li>
       <% }); %>
       </ul>
 
