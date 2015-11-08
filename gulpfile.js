@@ -8,6 +8,7 @@ var notify = require("gulp-notify");
 var path = require("path");
 var marked = require("marked");
 var maki = require("gulp-pagemaki");
+var fs = require("fs");
 
 // Markdown options for content parsing later
 marked.setOptions({
@@ -47,6 +48,7 @@ gulp.task("pages", function () {
 
   return gulp.src(paths.pages)
     .pipe(maki({
+      globals: fs.readFileSync('./config.yml', { encoding: 'utf-8' }),
       templatesDir: path.join(__dirname, "src", "layouts"),
       contentParse: function (string, extension) {
         if (extension.toLowerCase() === "markdown" || extension.toLowerCase() === "md") {
