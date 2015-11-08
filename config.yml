@@ -1,5 +1,32 @@
 site:
-  name: Baltimore NodeSchool
+  title: Baltimore NodeSchool
   links:
     github: https://github.com/nodeschool/baltimore
     twitter: http://twitter.com/baltimorenodeschool
+  events:
+    -
+      start: 2015-12-05T13:00:00-05:00
+      end: 2015-12-05T17:00:00-05:00
+      registerLink: https://ti.to/baltimorenodeschool/five
+      location:
+        name: Betamore
+        link: https://betamore.com
+      workshops:
+        -
+          name: Learn You Node
+          for: for learning node
+        -
+          name: Javascripting
+          for: for those interested in learning JavaScript itself
+        -
+          name: Stream Adventure
+          for: for a more advanced lesson
+        -
+          name: Browserify Adventure
+          for: if you want to experiment with npm + browsers
+    -
+      start: 2015-03-29T13:00:00-05:00
+      end: 2015-03-29T17:00:00-05:00
+      registerLink: https://ti.to/baltimorenodeschool/four
+      location:
+        name: Digital Harbor Foundation
