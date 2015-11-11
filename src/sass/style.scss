@@ -10,6 +10,17 @@
 	margin: 0 auto;
 }
 
+.sponsored-by {
+  display: inline;
+  padding-left: 0;
+
+  li {
+    display: inline;
+    margin: 0 10px;
+    font-size: 1.15em;
+  }
+}
+
 @media all and (min-width: 900px) {
 
 	.col {

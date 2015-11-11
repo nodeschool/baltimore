@@ -35,6 +35,19 @@ jsfoot:
 
       <p>Not sure if NodeSchool is for you? Curious to find out how you can prepare? Check out <strong>our brand new <a href="#before">Before You Come</a> section</strong>...</p>
 
+      <% if (site.upcoming.sponsors.length > 0) { %>
+        <small>Sponsored by:
+          <ul class="sponsored-by sponsor-stars">
+            <% _.forEach(site.upcoming.sponsors, function(sponsor, index) { %>
+              <li>
+                <i class="fa fa-star"></i>
+                <a href="<%= sponsor.link %>"><%= sponsor.name %></a>
+              </li>
+            <% }); %>
+          </ul>
+        </small>
+      <% } %>
+
     </div>
 
     <div style="margin-bottom: 3em;"></div>
