@@ -12,6 +12,7 @@ site:
         name: Betamore
         link: https://betamore.com
       workshops: ["Learn You Node", "Javascripting", "Stream Adventure", "Browserify Adventure"]
+      sponsors: ["charmCityJS", "Betamore"]
     -
       start: 2015-03-29T13:00:00-05:00
       end: 2015-03-29T17:00:00-05:00
@@ -36,3 +37,11 @@ workshops:
     name: Browserify Adventure
     description: if you want to experiment with npm + browsers
     link: https://github.com/substack/browserify-adventure
+
+sponsors:
+  -
+    name: charmCityJS
+    link: http://charmcityjs.com
+  -
+    name: Betamore
+    link: https://betamore.com

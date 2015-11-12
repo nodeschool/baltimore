@@ -141,6 +141,7 @@ function prepareUpcoming(globals) {
     time: start.format('ha') + ' to ' + end.format('ha')
   };
   upcoming.workshops = prepareEventWorkshops(upcoming, globals.workshops);
+  upcoming.sponsors = prepareEventSponsors(upcoming, globals.sponsors);
   return upcoming;
 }
 
@@ -151,5 +152,11 @@ function prepareUpcoming(globals) {
 function prepareEventWorkshops(event, workshops) {
   return _.map(event.workshops, function(w) {
     return _.find(workshops, 'name', w);
+  });
+}
+
+function prepareEventSponsors(event, sponsors) {
+  return _.map(event.sponsors, function(s) {
+    return _.find(sponsors, 'name', s);
   });
 }
