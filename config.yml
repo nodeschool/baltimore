@@ -9,8 +9,8 @@ site:
       end: 2015-12-05T17:00:00-05:00
       registerLink: https://ti.to/baltimorenodeschool/five
       location:
-        name: Betamore
-        link: https://betamore.com
+        name: Citelighter
+        link: https://www.citelighter.com
       workshops: ["Learn You Node", "Javascripting", "Stream Adventure", "Browserify Adventure"]
       sponsors: ["charmCityJS", "Betamore"]
     -
