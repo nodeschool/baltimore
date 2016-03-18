@@ -128,18 +128,32 @@ function prepareGlobals() {
     throw new Error('global config not loaded');
   }
   globals.site.upcoming = prepareUpcoming(globals);
+  globals.site.future = prepareEvents(globals.site.events);
   return globals;
 }
 
-function prepareUpcoming(globals) {
-  var upcoming = globals.site.events[0];
-  var start = moment(upcoming.start);
-  var end = moment(upcoming.end);
+function formatDates(start, end) {
+  var startDate = moment(start)
+    , endDate = moment(end);
 
-  upcoming.pretty = {
-    date: start.format('dddd, M/D'),
-    time: start.format('ha') + ' to ' + end.format('ha')
+  return {
+    date: startDate.format('dddd, M/D'),
+    time: startDate.format('ha') + ' to ' + endDate.format('ha')
   };
+}
+
+function prepareEvents(events) {
+  return _.map(events, function(event) {
+    event.pretty = formatDates(event.start, event.end);
+    return event;
+  });
+
+}
+
+function prepareUpcoming(globals) {
+  var upcoming = globals.site.events.shift();
+
+  upcoming.pretty = formatDates(upcoming.start, upcoming.end);
   upcoming.workshops = prepareEventWorkshops(upcoming, globals.workshops);
   upcoming.sponsors = prepareEventSponsors(upcoming, globals.sponsors);
   return upcoming;
@@ -147,7 +161,7 @@ function prepareUpcoming(globals) {
 
 /**
  * Translate a workshop string into the full workshop object
- * 
+ *
  */
 function prepareEventWorkshops(event, workshops) {
   return _.map(event.workshops, function(w) {

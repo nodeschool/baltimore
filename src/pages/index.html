@@ -63,7 +63,9 @@ jsfoot:
     <h4><i class="fa fa-check-square-o"></i> Mentor!</h4>
     <div class="inset">
       <p>Come help others learn how to node! No need to be an expert, you just have to know a little more than someone else. <a href="<%= site.upcoming.registerLink %>">Register as a mentor for any/all of our events</a> and we'll be in touch with more details.</p>
-      <p>Still not sure if this is a good fit for you? Talk to Jason (IRC/freenode: rhodesjason, Twitter: rhodesjason, Email: jason.matthew.rhodes@gmail.com).</p>
+      <p>Still not sure if this is a good fit for you? <em>Join our slack team.</em></p>
+        <script async defer src="http://charmcityjs.herokuapp.com/slackin.js?large"></script>
+          <p></p>
     </div>
 
     <h4><i class="fa fa-check-square-o"></i> Sponsor!</h4>
@@ -74,7 +76,7 @@ jsfoot:
     <h4><i class="fa fa-check-square-o"></i> Be Awesome!</h4>
     <div class="inset">
       <p>We have <a href="/baltimore/conduct-code.html">a code of conduct</a> that we're very serious about. Read it! If you don't agree, this is probably not the event for you.</p>
-      <p>Have suggestions about how we could improve the event for everybody? <strong>We want to hear them so bad!</strong> Email Jason with anything -> jason.matthew.rhodes@gmail.com</p>
+      <p>Have suggestions about how we could improve the event for everybody? <strong>We want to hear them so bad!</strong> Email us with anything -> <a href="mailto:nodeschool@charmcityjs.com">nodeschool@charmcityjs.com</a></p>
     </div>
 
     <h2 style="margin-top: 1em;">A note about inclusivity</h2>
@@ -115,6 +117,12 @@ jsfoot:
           <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
           </div>
       </form>
+      <h2>Upcoming Events 2016</h2>
+      <ul>
+      <% _.forEach(site.future, function (ws) { %>
+      <li><%= ws.pretty.date %> <%= ws.pretty.time %><br>@<%= ws.location.name %></li>
+      <% }); %>
+      </ul>
     </div>
     <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[10]='FULLNAME';ftypes[10]='text';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MENTOR';ftypes[3]='radio';fnames[4]='TWITTER';ftypes[4]='text';fnames[5]='MMERGE5';ftypes[5]='text';fnames[6]='20140504';ftypes[6]='text';fnames[7]='MMERGE7';ftypes[7]='text';fnames[8]='MMERGE8';ftypes[8]='text';fnames[9]='MMERGE9';ftypes[9]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     <!--End mc_embed_signup-->
@@ -191,7 +199,7 @@ jsfoot:
   </ul>
 
 </div>
-<!-- 
+<!--
 <a name="answers"></a>
 <div class="faq center" data-style="irc">
 
