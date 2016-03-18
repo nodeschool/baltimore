@@ -5,20 +5,38 @@ site:
     twitter: http://twitter.com/bmorenodeschool
   events:
     -
-      start: 2015-12-05T13:00:00-05:00
-      end: 2015-12-05T17:00:00-05:00
-      registerLink: https://ti.to/baltimorenodeschool/five
+      start: 2016-04-16T13:00:00-04:00
+      end: 2016-04-16T17:00:00-04:00
+      registerLink: https://ti.to/baltimorenodeschool/six
       location:
-        name: Citelighter
-        link: https://www.citelighter.com
-      workshops: ["Learn You Node", "Javascripting", "Stream Adventure", "Browserify Adventure"]
+        name: Betamore
+        link: https://betamore.com
+      workshops: ["Learn You Node", "Javascripting", "Stream Adventure"]
       sponsors: ["charmCityJS", "Betamore"]
     -
-      start: 2015-03-29T13:00:00-05:00
-      end: 2015-03-29T17:00:00-05:00
-      registerLink: https://ti.to/baltimorenodeschool/four
+      start: 2016-06-12T13:00:00-04:00
+      end: 2016-06-12T17:00:00-04:00
       location:
-        name: Digital Harbor Foundation
+        name: Betamore
+        link: https://betamore.com
+    -
+      start: 2016-08-13T13:00:00-04:00
+      end: 2016-08-13T17:00:00-04:00
+      location:
+        name: Betamore
+        link: https://betamore.com
+    -
+      start: 2016-10-09T13:00:00-04:00
+      end: 2016-10-09T17:00:00-04:00
+      location:
+        name: Betamore
+        link: https://betamore.com
+    -
+      start: 2016-12-10T13:00:00-05:00
+      end: 2016-12-10T17:00:00-05:00
+      location:
+        name: Betamore
+        link: https://betamore.com
 
 workshops:
   -
@@ -33,10 +51,6 @@ workshops:
     name: Stream Adventure
     description: for a more advanced lesson
     link: https://github.com/substack/stream-adventure
-  -
-    name: Browserify Adventure
-    description: if you want to experiment with npm + browsers
-    link: https://github.com/substack/browserify-adventure
 
 sponsors:
   -
