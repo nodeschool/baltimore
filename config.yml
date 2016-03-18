@@ -51,6 +51,10 @@ workshops:
     name: Stream Adventure
     description: for a more advanced lesson
     link: https://github.com/substack/stream-adventure
+  -
+    name: Browserify Adventure
+    description: if you want to experiment with npm + browsers
+    link: https://github.com/substack/browserify-adventure
 
 sponsors:
   -
