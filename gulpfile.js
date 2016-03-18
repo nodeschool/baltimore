@@ -128,8 +128,6 @@ function prepareGlobals() {
     throw new Error('global config not loaded');
   }
   globals.site.upcoming = prepareUpcoming(globals);
-  // build only future after upcoming
-  globals.site.events.shift();
   globals.site.future = prepareEvents(globals.site.events);
   return globals;
 }
@@ -153,7 +151,7 @@ function prepareEvents(events) {
 }
 
 function prepareUpcoming(globals) {
-  var upcoming = globals.site.events[0];
+  var upcoming = globals.site.events.shift();
 
   upcoming.pretty = formatDates(upcoming.start, upcoming.end);
   upcoming.workshops = prepareEventWorkshops(upcoming, globals.workshops);
