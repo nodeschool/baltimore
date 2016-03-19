@@ -24,6 +24,7 @@
     "gulp-notify": "~0.6.2",
     "gulp-pagemaki": "^1.0.0-alpha",
     "gulp-ruby-sass": "~0.3.0",
+    "gulp-sass": "^2.2.0",
     "gulp-util": "~2.2.14",
     "jshint-stylish": "~0.1.5",
     "minimist": "^1.2.0",
