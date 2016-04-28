@@ -5,9 +5,9 @@ site:
     twitter: http://twitter.com/bmorenodeschool
   events:
     -
-      start: 2016-04-16T13:00:00-04:00
-      end: 2016-04-16T17:00:00-04:00
-      registerLink: https://ti.to/baltimorenodeschool/six
+      start: 2016-06-12T13:00:00-04:00
+      end: 2016-06-12T17:00:00-04:00
+      registerLink: https://ti.to/baltimorenodeschool/seven
       location:
         name: Betamore
         link: https://betamore.com
@@ -16,12 +16,6 @@ site:
         - charmCityJS
         - Betamore
         - Asymmetrik
-    -
-      start: 2016-06-12T13:00:00-04:00
-      end: 2016-06-12T17:00:00-04:00
-      location:
-        name: Betamore
-        link: https://betamore.com
     -
       start: 2016-08-13T13:00:00-04:00
       end: 2016-08-13T17:00:00-04:00
