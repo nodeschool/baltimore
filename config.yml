@@ -2,12 +2,12 @@ site:
   title: Baltimore NodeSchool
   links:
     github: https://github.com/nodeschool/baltimore
-    twitter: http://twitter.com/bmorenodeschool
+    twitter: http://twitter.com/charmcityjs
   events:
     -
-      start: 2016-06-12T13:00:00-04:00
-      end: 2016-06-12T17:00:00-04:00
-      registerLink: https://ti.to/baltimorenodeschool/seven
+      start: 2016-08-13T13:00:00-04:00
+      end: 2016-08-13T17:00:00-04:00
+      registerLink: https://ti.to/baltimorenodeschool/eight
       location:
         name: Betamore
         link: https://betamore.com
@@ -16,12 +16,6 @@ site:
         - charmCityJS
         - Betamore
         - Asymmetrik
-    -
-      start: 2016-08-13T13:00:00-04:00
-      end: 2016-08-13T17:00:00-04:00
-      location:
-        name: Betamore
-        link: https://betamore.com
     -
       start: 2016-10-09T13:00:00-04:00
       end: 2016-10-09T17:00:00-04:00
