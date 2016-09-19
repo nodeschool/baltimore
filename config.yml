@@ -5,8 +5,8 @@ site:
     twitter: http://twitter.com/charmcityjs
   events:
     -
-      start: 2016-10-09T13:00:00-04:00
-      end: 2016-10-09T17:00:00-04:00
+      start: 2016-11-20T13:00:00-04:00
+      end: 2016-11-20T17:00:00-04:00
       registerLink: https://ti.to/baltimorenodeschool/nine
       location:
         name: Betamore
@@ -16,13 +16,7 @@ site:
         - charmCityJS
         - Betamore
         - Asymmetrik
-    -
-      start: 2016-12-10T13:00:00-05:00
-      end: 2016-12-10T17:00:00-05:00
-      location:
-        name: Betamore
-        link: https://betamore.com
-
+        
 workshops:
   -
     name: Learn You Node
