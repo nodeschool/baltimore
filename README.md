@@ -8,8 +8,10 @@ How to make updates to this site:
 1. Fork and/or clone the repo
 1. Create a new branch for your changes
 1. `npm install`
+1. (You may also need to do a `npm rebuild`)
 1. Make edits to SRC files only
 1. To add a new event, add it to the top of the YAML array of events in config.yml
+1. Make sure to build the project before committing: `npm run build`
 1. Preview your changes with `npm start` or `npm start -- --port=<port>`
 1. Commit the changes
 1. Push your branch, submit the pull request
