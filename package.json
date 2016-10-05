@@ -12,8 +12,8 @@
     "url": "https://github.com/baltimorenodeschool/baltimorenodeschool.github.io/issues"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter list",
-    "start": "gulp serve"
+    "start": "gulp serve",
+	"build": "gulp build"
   },
   "homepage": "https://github.com/baltimorenodeschool/baltimorenodeschool.github.io",
   "devDependencies": {
