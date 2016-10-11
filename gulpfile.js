@@ -137,7 +137,7 @@ function formatDates(start, end) {
     , endDate = moment(end);
 
   return {
-    date: startDate.format('dddd, M/D'),
+    date: startDate.format('dddd, MMMM Do, YYYY'),
     time: startDate.format('ha') + ' to ' + endDate.format('ha')
   };
 }
