@@ -23,7 +23,11 @@ jsfoot:
 
       <h2>Next Event</h2>
 
-      <h3><%= site.upcoming.pretty.date %> (<%= site.upcoming.pretty.time %>)<br>@ <a href="<%= site.upcoming.location.link %>"><%= site.upcoming.location.name %></a></h3>
+      <h3>
+		  <%= site.upcoming.pretty.date %>
+		  <br>From <%= site.upcoming.pretty.time %>
+		  <br>@ <a href="<%= site.upcoming.location.link %>"><%= site.upcoming.location.name %></a>
+	  </h3>
       <a href="<%= site.upcoming.registerLink %>" class="button">Register Now <i class="fa fa-chevron-right"></i></a>
 
       <p>This month, we'll be offering the following lessons:</p>
@@ -88,10 +92,12 @@ jsfoot:
   <div class="sidebar col last">
 
     <div class="item">
-      <h3>Upcoming Events 2016</h3>
+      <h3>Upcoming Events</h3>
       <ul>
       <% _.forEach(site.future, function (ws) { %>
-      <li><%= ws.pretty.date %> <%= ws.pretty.time %><br>@<%= ws.location.name %></li>
+      <li><b><%= ws.pretty.date %></b>
+		  <br>From <%= ws.pretty.time %>
+		  <br>@ <%= ws.location.name %></li>
       <% }); %>
       </ul>
     </div>
