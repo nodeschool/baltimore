@@ -5,24 +5,17 @@ site:
     twitter: http://twitter.com/charmcityjs
   events:
     -
-      start: 2016-11-20T13:00:00-05:00
-      end: 2016-11-20T17:00:00-05:00
-      registerLink: https://ti.to/baltimorenodeschool/nine
+      start: 2017-02-11T13:00:00-05:00
+      end: 2017-02-11T17:00:00-05:00
+      registerLink: https://ti.to/baltimorenodeschool/ten
       location:
         name: Betamore
         link: https://betamore.com
-      workshops: ["Learn You Node", "Javascripting", "Stream Adventure", "Advanced Topics"]
+      workshops: ["Learn You React", "Learn You Node", "Javascripting", "Advanced Topics"]
       sponsors:
         - charmCityJS
         - Betamore
         - Asymmetrik
-
-    -
-      start: 2017-02-11T13:00:00-05:00
-      end: 2017-02-11T17:00:00-05:00
-      location:
-        name: Betamore
-        link: https://betamore.com
 
     -
       start: 2017-05-13T13:00:00-04:00
@@ -47,20 +40,23 @@ site:
 
 workshops:
   -
+    name: Learn You React
+    description: Each NodeSchool we offer a different "Special Focus" class that targets an advanced topic for everyone to learn together.  Our February Special Focus is going to be <b>LearnYouReact</b>, an introduction to the React Framework.  It's the latest thing that all the kids are talking about!
+    link: https://github.com/kohei-takata/learnyoureact
+
+  -
     name: Learn You Node
-    description: for learning node
+    description: An introduction into NodeJS and all the really cool things you can do with JavaScript outside of the browser! A basic understanding of JavaScript is recommended.
     link: https://github.com/workshopper/learnyounode
+
   -
     name: Javascripting
-    description: for those interested in learning JavaScript itself
+    description: A great place to start if you don't know any JavaScript and want to learn this amazing language.
     link: https://github.com/sethvincent/javascripting
-  -
-    name: Stream Adventure
-    description: for a more advanced lesson
-    link: https://github.com/substack/stream-adventure
+
   -
     name: Advanced Topics
-    description: Explore any of the other adanced NodeSchool topics like WebGL, Web Audio, Browserify, Reacty, etc. If there's a NodeSchool lesson, we will help you with it.
+    description: Explore any of the other adanced NodeSchool topics like Stream-Adventures, WebGL, Web Audio, Browserify, etc. If there's a NodeSchool lesson, we will help you with it.
     link: http://nodeschool.io/#workshoppers
 
 sponsors:
