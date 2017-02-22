@@ -5,24 +5,17 @@ site:
     twitter: http://twitter.com/charmcityjs
   events:
     -
-      start: 2017-02-11T13:00:00-05:00
-      end: 2017-02-11T17:00:00-05:00
-      registerLink: https://ti.to/baltimorenodeschool/ten
+      start: 2017-05-13T13:00:00-04:00
+      end: 2017-05-13T17:00:00-04:00
+      registerLink: https://ti.to/baltimorenodeschool/eleven
       location:
         name: Betamore
         link: https://betamore.com
-      workshops: ["Learn You React", "Learn You Node", "Javascripting", "Advanced Topics"]
+      workshops: ["ES6", "Learn You Node", "Javascripting", "Advanced Topics"]
       sponsors:
         - charmCityJS
         - Betamore
         - Asymmetrik
-
-    -
-      start: 2017-05-13T13:00:00-04:00
-      end: 2017-05-13T17:00:00-04:00
-      location:
-        name: Betamore
-        link: https://betamore.com
 
     -
       start: 2017-08-19T13:00:00-04:00
@@ -40,9 +33,9 @@ site:
 
 workshops:
   -
-    name: Learn You React
-    description: Each NodeSchool we offer a different "Special Focus" class that targets an advanced topic for everyone to learn together.  Our February Special Focus is going to be <b>LearnYouReact</b>, an introduction to the React Framework.  It's the latest thing that all the kids are talking about!
-    link: https://github.com/kohei-takata/learnyoureact
+    name: ES6
+    description: Each NodeSchool we offer a different "Special Focus" class that targets an advanced topic for everyone to learn together.  Our May Special Focus is going to be <b>ES6</b>, an introduction to all of the spify new features that ES6 (ECMAScript 6, ES2015) introduced to the JavaScript languages. We've had a lot of requests for this topic, so we finally decided to give it some good coverage. Very exciting stuff!
+    link: https://github.com/yosuke-furukawa/tower-of-babel
 
   -
     name: Learn You Node
