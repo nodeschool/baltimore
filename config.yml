@@ -27,7 +27,7 @@ workshops:
   -
     name: Prototypes
     description: Our August special focus is going to be object prototypes. Deepen your understanding of JavaScript objects by learning about prototypes, the prototype chain, and constructor calls of functions.
-    link: https://github.com/yosuke-furukawa/tower-of-babel
+    link: https://github.com/sporto/planetproto
 
   -
     name: Learn You Node
