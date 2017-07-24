@@ -5,23 +5,16 @@ site:
     twitter: http://twitter.com/charmcityjs
   events:
     -
-      start: 2017-05-13T13:00:00-04:00
-      end: 2017-05-13T17:00:00-04:00
-      registerLink: https://ti.to/baltimorenodeschool/eleven
+      start: 2017-08-19T13:00:00-04:00
+      end: 2017-08-19T17:00:00-04:00
+      registerLink: https://ti.to/baltimorenodeschool/twelve
       location:
         name: Betamore City Garage
         link: http://www.citygarage.vc/
-      workshops: ["ES6", "Learn You Node", "Javascripting", "Advanced Topics"]
+      workshops: ["Prototypes", "Learn You Node", "Javascripting", "Advanced Topics"]
       sponsors:
         - charmCityJS
         - Betamore
-
-    -
-      start: 2017-08-19T13:00:00-04:00
-      end: 2017-08-19T17:00:00-04:00
-      location:
-        name: Betamore City Garage
-        link: http://www.citygarage.vc/
 
     -
       start: 2017-11-12T13:00:00-05:00
@@ -32,8 +25,8 @@ site:
 
 workshops:
   -
-    name: ES6
-    description: Each NodeSchool we offer a different "Special Focus" class that targets an advanced topic for everyone to learn together.  Our May Special Focus is going to be <b>ES6</b>, an introduction to all of the spify new features that ES6 (ECMAScript 6, ES2015) introduced to the JavaScript languages. We've had a lot of requests for this topic, so we finally decided to give it some good coverage. Very exciting stuff!
+    name: Prototypes
+    description: Our August special focus is going to be object prototypes. Deepen your understanding of JavaScript objects by learning about prototypes, the prototype chain, and constructor calls of functions.
     link: https://github.com/yosuke-furukawa/tower-of-babel
 
   -
