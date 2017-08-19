@@ -5,13 +5,13 @@ site:
     twitter: http://twitter.com/charmcityjs
   events:
     -
-      start: 2017-08-19T13:00:00-04:00
-      end: 2017-08-19T17:00:00-04:00
-      registerLink: https://ti.to/baltimorenodeschool/twelve
+      start: 2017-11-12T13:00:00-04:00
+      end: 2017-11-12T17:00:00-04:00
+      registerLink: https://ti.to/baltimorenodeschool/thirteen
       location:
         name: Betamore City Garage
         link: http://www.citygarage.vc/
-      workshops: ["Prototypes", "Learn You Node", "Javascripting", "Advanced Topics"]
+      workshops: ["Special Topic", "Learn You Node", "Javascripting", "Advanced Topics"]
       sponsors:
         - charmCityJS
         - Betamore
@@ -25,9 +25,9 @@ site:
 
 workshops:
   -
-    name: Prototypes
-    description: Our August special focus is going to be object prototypes. Deepen your understanding of JavaScript objects by learning about prototypes, the prototype chain, and constructor calls of functions.
-    link: https://github.com/sporto/planetproto
+    name: Special Topic
+    description: Our November special focus topic is still being decided, but rest assured, it's going to be AMAZING!
+    link: https://ti.to/baltimorenodeschool/thirteen
 
   -
     name: Learn You Node
