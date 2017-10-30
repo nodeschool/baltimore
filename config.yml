@@ -5,8 +5,8 @@ site:
     twitter: http://twitter.com/charmcityjs
   events:
     -
-      start: 2017-11-12T13:00:00-04:00
-      end: 2017-11-12T17:00:00-04:00
+      start: 2017-11-12T13:00:00-05:00
+      end: 2017-11-12T17:00:00-05:00
       registerLink: https://ti.to/baltimorenodeschool/thirteen
       location:
         name: Betamore City Garage
@@ -26,8 +26,8 @@ site:
 workshops:
   -
     name: Special Topic
-    description: Our November special focus topic is still being decided, but rest assured, it's going to be AMAZING!
-    link: https://ti.to/baltimorenodeschool/thirteen
+    description: Promises, Promises! Join us for our special Baltimore dive into the magic of Promises and what makes them amazingly cool. Plus, the future of NodeJS and async/await is built on Promises, so you'd best learn em now.
+    link: https://github.com/stevekane/promise-it-wont-hurt
 
   -
     name: Learn You Node
