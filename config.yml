@@ -5,9 +5,9 @@ site:
     twitter: http://twitter.com/charmcityjs
   events:
     -
-      start: 2017-11-12T13:00:00-05:00
-      end: 2017-11-12T17:00:00-05:00
-      registerLink: https://ti.to/baltimorenodeschool/thirteen
+      start: 2018-02-10T13:00:00-05:00
+      end: 2018-02-10T17:00:00-05:00
+      registerLink: https://ti.to/baltimorenodeschool/fourteen
       location:
         name: Betamore City Garage
         link: http://www.citygarage.vc/
@@ -17,8 +17,22 @@ site:
         - Betamore
 
     -
-      start: 2017-11-12T13:00:00-05:00
-      end: 2017-11-12T17:00:00-05:00
+      start: 2018-05-06T13:00:00-04:00
+      end: 2018-05-06T17:00:00-04:00
+      location:
+        name: Betamore City Garage
+        link: https://betamore.com
+
+    -
+      start: 2018-08-19T13:00:00-04:00
+      end: 2018-08-19T17:00:00-04:00
+      location:
+        name: Betamore City Garage
+        link: https://betamore.com
+
+    -
+      start: 2018-11-10T13:00:00-05:00
+      end: 2018-11-10T17:00:00-05:00
       location:
         name: Betamore City Garage
         link: https://betamore.com
@@ -26,8 +40,8 @@ site:
 workshops:
   -
     name: Special Topic
-    description: Promises, Promises! Join us for our special Baltimore dive into the magic of Promises and what makes them amazingly cool. Plus, the future of NodeJS and async/await is built on Promises, so you'd best learn em now.
-    link: https://github.com/stevekane/promise-it-wont-hurt
+    description: Each NodeSchool we offer a different "Special Focus" class that targets an advanced topic for everyone to learn together.  Our February Special Focus is going to be <b>ES6</b>, an introduction to all of the spify new features that ES6 (ECMAScript 6, ES2015) introduced to the JavaScript languages. We've had a lot of requests for this topic, so we finally decided to give it some good coverage. Very exciting stuff!
+    link: https://github.com/yosuke-furukawa/tower-of-babel
 
   -
     name: Learn You Node
