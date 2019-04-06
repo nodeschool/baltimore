@@ -21,9 +21,13 @@ jsfoot:
 
     <div class="next-event">
 
-      <h2>Next Event</h2>
+      <h2>Currently planning events for 2019!</h2>
+      <h3>Check back for updates or follow us on <br/>
+        <a class="navicon" href="<%= site.links.twitter %>"><i class="fa fa-twitter-square"></i></a>
+      </h3>
+      <!-- <h2>Next Event</h2> -->
 
-      <h3>
+      <!-- <h3>
 		  <%= site.upcoming.pretty.date %>
 		  <br>From <%= site.upcoming.pretty.time %>
 		  <br>@ <a href="<%= site.upcoming.location.link %>"><%= site.upcoming.location.name %></a>
@@ -35,7 +39,7 @@ jsfoot:
       <% _.forEach(site.upcoming.workshops, function (ws) { %>
         <li><a href="<%= ws.link %>"><%= ws.name %></a>: <%= ws.description %></li>
       <% }); %>
-      </ul>
+      </ul> -->
 
       <p>Not sure if NodeSchool is for you? Curious to find out how you can prepare? Check out <strong>our brand new <a href="#before">Before You Come</a> section</strong>...</p>
 
@@ -214,6 +218,7 @@ jsfoot:
   <p class="answerbot"><b>absolutely not.</b> if you're familiar with the command line and know some javascript, try out the learn you node workshop on your own. if you make it through most of the exercises and you'd like to mentor, we'd love to have you! register as a mentor (you can always change your mind later)!</p>
 </div> -->
 
-<div class="center">
+<!-- todo: un-comment when schedule is added -->
+<!-- <div class="center">
   <a href="<%= site.upcoming.registerLink %>" class="register-push button xlarge">Register for the <%= site.upcoming.pretty.date %> event now!</a>
-</div>
+</div> -->
