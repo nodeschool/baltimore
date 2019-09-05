@@ -2,17 +2,17 @@
 layout: default
 title: learn node.js such fun events baltimore, md wow
 jsfoot:
-  - main.js
+- main.js
 ---
 <div class="center">
-<h1>
-  <img src="/baltimore/assets/images/bmorenodeschool-white.png" alt="baltimore nodeschool" />
-  <a class="huh" href="#before"><i class="fa fa-terminal"></i> <span>Before you come, read this</span></a>
-  <div class="social">
-    <a class="navicon" href="<%= site.links.twitter %>"><i class="fa fa-twitter-square"></i></a>
-    <a class="navicon" href="<%= site.links.github %>"><i class="fa fa-github-square"></i></a>
-  </div>
-</h1>
+  <h1>
+    <img src="/baltimore/assets/images/bmorenodeschool-white.png" alt="baltimore nodeschool" />
+    <a class="huh" href="#before"><i class="fa fa-terminal"></i> <span>Before you come, read this</span></a>
+    <div class="social">
+      <a class="navicon" href="<%= site.links.twitter %>"><i class="fa fa-twitter-square"></i></a>
+      <a class="navicon" href="<%= site.links.github %>"><i class="fa fa-github-square"></i></a>
+    </div>
+  </h1>
 </div>
 
 <div class="row center">
@@ -24,32 +24,33 @@ jsfoot:
       <h2>Next Event</h2>
 
       <h3>
-		  <%= site.upcoming.pretty.date %>
-		  <br>From <%= site.upcoming.pretty.time %>
-		  <br>@ <a href="<%= site.upcoming.location.link %>"><%= site.upcoming.location.name %></a>
-	  </h3>
+        <%= site.upcoming.pretty.date %>
+        <br>From <%= site.upcoming.pretty.time %>
+        <br>@ <a href="<%= site.upcoming.location.link %>"><%= site.upcoming.location.name %></a>
+      </h3>
       <a href="<%= site.upcoming.registerLink %>" class="button">Register Now <i class="fa fa-chevron-right"></i></a>
 
       <p>This month, we'll be offering the following lessons:</p>
       <ul>
-      <% _.forEach(site.upcoming.workshops, function (ws) { %>
+        <% _.forEach(site.upcoming.workshops, function (ws) { %>
         <li><a href="<%= ws.link %>"><%= ws.name %></a>: <%= ws.description %></li>
-      <% }); %>
+        <% }); %>
       </ul>
 
-      <p>Not sure if NodeSchool is for you? Curious to find out how you can prepare? Check out <strong>our brand new <a href="#before">Before You Come</a> section</strong>...</p>
+      <p>Not sure if NodeSchool is for you? Curious to find out how you can prepare? Check out <strong>our brand new <a
+            href="#before">Before You Come</a> section</strong>...</p>
 
       <% if (site.upcoming.sponsors.length > 0) { %>
-        <small>Sponsored by:
-          <ul class="sponsored-by sponsor-stars"> 
-            <% _.forEach(site.upcoming.sponsors, function(sponsor, index) { %>
-              <li>
-                <i class="fa fa-star"></i>
-                <a href="<%= sponsor.link %>"><%= sponsor.name %></a>
-              </li>
-            <% }); %>
-          </ul>
-        </small>
+      <small>Sponsored by:
+        <ul class="sponsored-by sponsor-stars">
+          <% _.forEach(site.upcoming.sponsors, function(sponsor, index) { %>
+          <li>
+            <i class="fa fa-star"></i>
+            <a href="<%= sponsor.link %>"><%= sponsor.name %></a>
+          </li>
+          <% }); %>
+        </ul>
+      </small>
       <% } %>
 
     </div>
@@ -60,12 +61,18 @@ jsfoot:
 
     <h4><i class="fa fa-check-square-o"></i> Attend!</h4>
     <div class="inset">
-      <p>Come learn how to node! We'll be working together on open-source workshop lessons from <a href="http://nodeschool.io">nodeschool.io</a> (see <a href="<%= site.upcoming.registerLink %>">the registration page</a> for which workshops we'll be doing each event). Come for the first time or come back and repeat a lesson over again--repetition is a good thing! Chances are good that you'll get further and understand more this time. :)</p>
+      <p>Come learn how to node! We'll be working together on open-source workshop lessons from <a
+          href="http://nodeschool.io">nodeschool.io</a> (see <a href="<%= site.upcoming.registerLink %>">the
+          registration page</a> for which workshops we'll be doing each event). Come for the first time or come back and
+        repeat a lesson over again--repetition is a good thing! Chances are good that you'll get further and understand
+        more this time. :)</p>
     </div>
 
     <h4><i class="fa fa-check-square-o"></i> Mentor!</h4>
     <div class="inset">
-      <p>Come help others learn how to node! No need to be an expert, you just have to know a little more than someone else. <a href="<%= site.upcoming.registerLink %>">Register as a mentor for any/all of our events</a> and we'll be in touch with more details.</p>
+      <p>Come help others learn how to node! No need to be an expert, you just have to know a little more than someone
+        else. <a href="<%= site.upcoming.registerLink %>">Register as a mentor for any/all of our events</a> and we'll
+        be in touch with more details.</p>
       <p>Still not sure if this is a good fit for you? <em>Join our slack team.</em></p>
       <script async defer src="https://charmcityjs.herokuapp.com/slackin.js?large"></script>
       <p></p>
@@ -73,25 +80,33 @@ jsfoot:
 
     <h4><i class="fa fa-check-square-o"></i> Sponsor!</h4>
     <div class="inset">
-      <p>Without sponsors, nodeschool would be in Jason's living room with very few chairs and no snacks. We'll be making sponsor tickets available on our registration page shortly, which will get you a place to put your sign/swag and a 2 minute pitch during our mid-event break. Stay tuned for more info...</p>
+      <p>Without sponsors, nodeschool would be in Jason's living room with very few chairs and no snacks. We'll be
+        making sponsor tickets available on our registration page shortly, which will get you a place to put your
+        sign/swag and a 2 minute pitch during our mid-event break. Stay tuned for more info...</p>
     </div>
 
     <h4><i class="fa fa-check-square-o"></i> Be Awesome!</h4>
     <div class="inset">
-      <p>We have <a href="/baltimore/conduct-code.html">a code of conduct</a> that we're very serious about. Read it! If you don't agree, this is probably not the event for you.</p>
-      <p>Have suggestions about how we could improve the event for everybody? <strong>We want to hear them. (So bad.)</strong> Email us with anything -> <a href="mailto:nodeschool@charmcityjs.com">nodeschool@charmcityjs.com</a></p>
+      <p>We have <a href="/baltimore/conduct-code.html">a code of conduct</a> that we're very serious about. Read it! If
+        you don't agree, this is probably not the event for you.</p>
+      <p>Have suggestions about how we could improve the event for everybody? <strong>We want to hear them. (So
+          bad.)</strong> Email us with anything -> <a
+          href="mailto:nodeschool@charmcityjs.com">nodeschool@charmcityjs.com</a></p>
     </div>
 
     <h2 style="margin-top: 1em;">A note about inclusivity</h2>
-    <p>We're serious when we say we care about including everyone--so much that Jason gave a talk at CascadiaJS about the topic. You can watch the video here if you're interested in hearing more, and like we've already said, get in touch if you have suggestions.</p>
+    <p>We're serious when we say we care about including everyone--so much that Jason gave a talk at CascadiaJS about
+      the topic. You can watch the video here if you're interested in hearing more, and like we've already said, get in
+      touch if you have suggestions.</p>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/mMbiHX2bmbA" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mMbiHX2bmbA" frameborder="0"
+      allowfullscreen></iframe>
 
   </div>
 
   <div class="sidebar col last">
 
-    <div class="item">
+    <!-- <div class="item">
       <h3>Upcoming Events</h3>
       <ul>
       <% _.forEach(site.future, function (ws) { %>
@@ -100,57 +115,58 @@ jsfoot:
 		  <br>@ <%= ws.location.name %></li>
       <% }); %>
       </ul>
-    </div>
+    </div> -->
 
     <div class="item">
-    <img src="/baltimore/assets/images/event/IMG_4881@2x.jpg" />
-    <!-- <p class="caption">People doing things</p> -->
+      <img src="/baltimore/assets/images/event/IMG_4881@2x.jpg" />
+      <!-- <p class="caption">People doing things</p> -->
     </div>
 
     <blockquote class="">
-    <i class="fa fa-quote-left"></i>
-    Its a great way to collaborate and learn!
-    <cite>&#8213;Sara, attendee</cite>
+      <i class="fa fa-quote-left"></i>
+      Its a great way to collaborate and learn!
+      <cite>&#8213;Sara, attendee</cite>
     </blockquote>
 
     <blockquote class="item">
-    <i class="fa fa-quote-left"></i>
-    I loved this event! I've learned more in the few hours I've spent here than reading books and blogs on my own.
-    <cite>&#8213;Justin, attendee</cite>
+      <i class="fa fa-quote-left"></i>
+      I loved this event! I've learned more in the few hours I've spent here than reading books and blogs on my own.
+      <cite>&#8213;Justin, attendee</cite>
     </blockquote>
 
     <div class="item">
-    <img src="/baltimore/assets/images/event/IMG_4879@2x.jpg" />
-    <!-- <p class="caption">People doing things</p> -->
+      <img src="/baltimore/assets/images/event/IMG_4879@2x.jpg" />
+      <!-- <p class="caption">People doing things</p> -->
     </div>
 
     <blockquote class="">
-    <i class="fa fa-quote-left"></i>
-    It was a blast.
-    <cite>&#8213;Joe, mentor</cite>
+      <i class="fa fa-quote-left"></i>
+      It was a blast.
+      <cite>&#8213;Joe, mentor</cite>
     </blockquote>
 
     <blockquote class="item">
-    <i class="fa fa-quote-left"></i>
-    I learned more about node. As someone trying to break in to the world of developing that is all I could ever ask.
-    <cite>&#8213;Steven, attendee</cite>
+      <i class="fa fa-quote-left"></i>
+      I learned more about node. As someone trying to break in to the world of developing that is all I could ever ask.
+      <cite>&#8213;Steven, attendee</cite>
     </blockquote>
 
     <div class="item">
-    <img src="/baltimore/assets/images/event/IMG_4876@2x.jpg" />
-    <!-- <p class="caption">People doing things</p> -->
+      <img src="/baltimore/assets/images/event/IMG_4876@2x.jpg" />
+      <!-- <p class="caption">People doing things</p> -->
     </div>
 
     <blockquote class="item">
-    <i class="fa fa-quote-left"></i>
-    It was nice and relaxed, and also helped <em>me</em> learn more.
-    <cite>&#8213;Avery, mentor</cite>
+      <i class="fa fa-quote-left"></i>
+      It was nice and relaxed, and also helped <em>me</em> learn more.
+      <cite>&#8213;Avery, mentor</cite>
     </blockquote>
 
     <blockquote class="item">
-    <i class="fa fa-quote-left"></i>
-    Really enjoyed the friendly, collaborative environment! The mentors were very accessible and made me feel like I could ask anything.
-    <cite>&#8213;Tim, attendee</cite>
+      <i class="fa fa-quote-left"></i>
+      Really enjoyed the friendly, collaborative environment! The mentors were very accessible and made me feel like I
+      could ask anything.
+      <cite>&#8213;Tim, attendee</cite>
     </blockquote>
 
   </div>
@@ -165,12 +181,20 @@ jsfoot:
 <div class="center" id="before">
 
   <h1>Before You Come...</h1>
-  <p>We want to make sure everyone who comes to NodeSchool gets the most out of it, so here are a few things to keep in mind:</p>
+  <p>We want to make sure everyone who comes to NodeSchool gets the most out of it, so here are a few things to keep in
+    mind:</p>
   <ul style="margin: 2em 0;">
-    <li>If you've <em>never</em> done any code at all before, no HTML or CSS or Excel formulas or anything at all, the lessons we work on at NodeSchool are going to be pretty difficult. You should at least have a text editor and be able to open your command line tool. (If you're looking to get up to speed on the command line, read and work through <a href="https://zellwk.com/blog/fear-of-command-line/">this post</a>.)
-    <li>If you generally know how to fake your way through the command line but you need a laptop, let us know and we can provide one.</li>
-    <li>You should <a href="http://nodejs.org">install node</a> before you come. Make sure you know how to open your command line and run "node -v" to print the version of node you currently have. Also try "npm -v" to verify that npm was installed with node like it should have been.</li>
-    <li>Install the course you plan to work on during the event. Find instructions at <a href="http://nodeschool.io/#workshoppers">nodeschool.io</a></li>
+    <li>If you've <em>never</em> done any code at all before, no HTML or CSS or Excel formulas or anything at all, the
+      lessons we work on at NodeSchool are going to be pretty difficult. You should at least have a text editor and be
+      able to open your command line tool. (If you're looking to get up to speed on the command line, read and work
+      through <a href="https://zellwk.com/blog/fear-of-command-line/">this post</a>.)
+    <li>If you generally know how to fake your way through the command line but you need a laptop, let us know and we
+      can provide one.</li>
+    <li>You should <a href="http://nodejs.org">install node</a> before you come. Make sure you know how to open your
+      command line and run "node -v" to print the version of node you currently have. Also try "npm -v" to verify that
+      npm was installed with node like it should have been.</li>
+    <li>Install the course you plan to work on during the event. Find instructions at <a
+        href="http://nodeschool.io/#workshoppers">nodeschool.io</a></li>
   </ul>
 
 </div>
@@ -215,5 +239,6 @@ jsfoot:
 </div> -->
 
 <div class="center">
-  <a href="<%= site.upcoming.registerLink %>" class="register-push button xlarge">Register for the <%= site.upcoming.pretty.date %> event now!</a>
+  <a href="<%= site.upcoming.registerLink %>" class="register-push button xlarge">Register for the
+    <%= site.upcoming.pretty.date %> event now!</a>
 </div>
