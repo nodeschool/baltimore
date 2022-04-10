@@ -27,7 +27,7 @@
     "gulp-sass": "^2.2.0",
     "gulp-util": "~2.2.14",
     "jshint-stylish": "~0.1.5",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.6",
     "mocha": "^1.18.2",
     "node-underscorify": "0.0.3",
     "path": "~0.4.9",
